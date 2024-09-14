@@ -160,6 +160,7 @@ export class OauthService {
       clientId,
       user: refreshTokenFromDB.consent.user,
       excludeIdToken: true,
+      includeRefreshToken: true,
     });
   }
 
