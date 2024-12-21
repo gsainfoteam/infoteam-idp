@@ -6,7 +6,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { JwtModule } from '@nestjs/jwt';
 import { IdpStrategy } from './guard/idp.strategy';
 import { IdpGuard } from './guard/idp.guard';
-import { CacheModule } from 'src/cache/cache.module';
+import { CacheModule } from '@lib/cache';
 
 @Module({
   imports: [

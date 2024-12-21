@@ -5,7 +5,6 @@ import {
   InternalServerErrorException,
   Logger,
 } from '@nestjs/common';
-import { EmailService } from 'src/email/email.service';
 import { SendCertificationCodeDto } from './dto/req/sendCertificationCode.dto';
 import { ValidateCertificationJwtResDto } from './dto/res/validateCertificationJwtRes.dto';
 import { JwtService } from '@nestjs/jwt';
@@ -16,11 +15,11 @@ import { UserRepository } from './user.repository';
 import { User } from '@prisma/client';
 import { DeleteUserDto } from './dto/req/deleteUser.dto';
 import { ChangePasswordDto } from './dto/req/changePassword.dto';
-import { CacheService } from 'src/cache/cache.service';
 import { ValidationCertificationCodeDto } from './dto/req/validateCertificationCode.dto';
-import { CacheNotFoundException } from 'src/cache/exceptions/cacheNotFound.exception';
 import { CertificationCodeEnum } from './types/certificationCode.type';
 import { Loggable } from '@lib/logger/decorator/loggable';
+import { CacheNotFoundException, CacheService } from '@lib/cache';
+import { EmailService } from '@lib/email';
 
 @Injectable()
 @Loggable()

@@ -25,8 +25,8 @@ import { TokenDto } from './dto/req/token.dto';
 import { Client } from '@prisma/client';
 import { RevokeDto } from './dto/req/revoke.dto';
 import { JwtPayload } from 'jsonwebtoken';
-import { CacheService } from 'src/cache/cache.service';
 import { Loggable } from '@lib/logger/decorator/loggable';
+import { CacheService } from '@lib/cache';
 
 @Injectable()
 @Loggable()

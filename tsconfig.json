@@ -30,6 +30,18 @@
       ],
       "@lib/prisma/*": [
         "libs/prisma/src/*"
+      ],
+      "@lib/cache": [
+        "libs/cache/src"
+      ],
+      "@lib/cache/*": [
+        "libs/cache/src/*"
+      ],
+      "@lib/email": [
+        "libs/email/src"
+      ],
+      "@lib/email/*": [
+        "libs/email/src/*"
       ]
     }
   }

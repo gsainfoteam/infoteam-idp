@@ -5,8 +5,8 @@ import { UserService } from 'src/user/user.service';
 import { LoginDto } from './dto/req/login.dto';
 import { User } from '@prisma/client';
 import { LoginResultType } from './types/loginResult.type';
-import { CacheService } from 'src/cache/cache.service';
 import { Loggable } from '@lib/logger/decorator/loggable';
+import { CacheService } from '@lib/cache';
 
 @Injectable()
 @Loggable()

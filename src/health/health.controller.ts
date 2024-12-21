@@ -6,8 +6,8 @@ import {
   MemoryHealthIndicator,
   PrismaHealthIndicator,
 } from '@nestjs/terminus';
-import { PrismaService } from 'src/prisma/prisma.service';
 import { RedisIndicator } from './indicator/redis.indicator';
+import { PrismaService } from '@lib/prisma';
 
 // Controller for health check
 @ApiTags('health')

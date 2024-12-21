@@ -10,8 +10,8 @@ import { UserModule } from 'src/user/user.module';
 import { JwtModule } from '@nestjs/jwt';
 import { Oauth2Strategy } from './guard/oauth2.strategy';
 import { Oauth2Guard } from './guard/oauth2.guard';
-import { CacheModule } from 'src/cache/cache.module';
 import { PrismaModule } from '@lib/prisma';
+import { CacheModule } from '@lib/cache';
 
 @Module({
   imports: [
