@@ -6,11 +6,13 @@ import { EmailModule } from 'src/email/email.module';
 import { JwtModule } from '@nestjs/jwt';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { CacheModule } from 'src/cache/cache.module';
+import { PrismaModule } from '@lib/prisma';
 
 @Module({
   imports: [
     EmailModule,
     CacheModule,
+    PrismaModule,
     JwtModule.registerAsync({
       imports: [ConfigModule],
       inject: [ConfigService],

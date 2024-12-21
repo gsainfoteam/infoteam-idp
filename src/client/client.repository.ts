@@ -7,9 +7,9 @@ import {
 } from '@nestjs/common';
 import { Client } from '@prisma/client';
 import { PrismaClientKnownRequestError } from '@prisma/client/runtime/library';
-import { PrismaService } from 'src/prisma/prisma.service';
 import { ConsentClient } from './types/consentClient.type';
 import { Loggable } from '@lib/logger/decorator/loggable';
+import { PrismaService } from '@lib/prisma';
 
 @Injectable()
 @Loggable()

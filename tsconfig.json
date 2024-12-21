@@ -24,6 +24,12 @@
       ],
       "@lib/logger/*": [
         "libs/logger/src/*"
+      ],
+      "@lib/prisma": [
+        "libs/prisma/src"
+      ],
+      "@lib/prisma/*": [
+        "libs/prisma/src/*"
       ]
     }
   }

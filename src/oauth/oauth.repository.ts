@@ -4,12 +4,12 @@ import {
   InternalServerErrorException,
   Logger,
 } from '@nestjs/common';
-import { PrismaService } from 'src/prisma/prisma.service';
 import { Scope } from './types/Scopes.type';
 import { UserInfo } from 'src/idp/types/userInfo.type';
 import { PrismaClientKnownRequestError } from '@prisma/client/runtime/library';
 import { ExtendedRefreshToken } from './types/extendedRefreshToken.type';
 import { Loggable } from '@lib/logger/decorator/loggable';
+import { PrismaService } from '@lib/prisma';
 
 const MAX_REFRESH_TOKEN_COUNT = 10;
 
